@@ -1,0 +1,36 @@
+{
+    "name": "leijman/fmp-api-sdk",
+    "description": "Financial modeling prep API SDK.",
+    "keywords": [
+        "fmp-api-sdk"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.3",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "illuminate/support": "8.*"
+    },
+    "authors": [
+        {
+            "name": "Lars Eijman",
+            "email": "lars@eijman.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Leijman\\FmpApiSdk\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Leijman\\FmpApiSdk\\FmpServiceProvider"
+            ],
+            "aliases": {
+                "Fmp": "Leijman\\FmpApiSdk\\Facades\\FmpFacade"
+            }
+        }
+    }
+}
