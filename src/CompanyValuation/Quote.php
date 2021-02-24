@@ -3,6 +3,7 @@
 namespace Leijman\FmpApiSdk\CompanyValuation;
 
 use Leijman\FmpApiSdk\Contracts\Fmp;
+use Leijman\FmpApiSdk\Exceptions\InvalidData;
 use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class Quote extends BaseRequest
@@ -30,12 +31,12 @@ class Quote extends BaseRequest
 
     /**
      * @return bool|void
-     * @throws WrongData
+     * @throws InvalidData
      */
     protected function validateParams(): void
     {
         if (empty($this->symbol)) {
-            // throw WrongData::invalidValuesProvided('Please provide a symbol to query!');
+            throw InvalidData::invalidDataProvided('Please provide a symbol to query!');
         }
     }
 }
