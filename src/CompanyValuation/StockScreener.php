@@ -53,15 +53,4 @@ class StockScreener extends BaseRequest
 
         return $this;
     }
-
-    /**
-     * @return bool|void
-     * @throws WrongData
-     */
-    protected function validateParams(): void
-    {
-        // if (empty($this->symbol)) {
-            // throw WrongData::invalidValuesProvided('Please provide a symbol to query!');
-        // }
-    }
 }

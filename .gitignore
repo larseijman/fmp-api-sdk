@@ -1,0 +1,9 @@
+vendor
+coverage
+build
+composer.lock
+coverage.clover
+
+phpunit.xml
+.phpunit.cache
+.phpunit.result.cache

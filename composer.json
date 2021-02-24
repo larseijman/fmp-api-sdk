@@ -7,10 +7,14 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": "^7.3",
+        "php": "^7.3|^8.0",
         "ext-json": "*",
         "guzzlehttp/guzzle": "^7.0.1",
         "illuminate/support": "8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "6.*",
+        "phpunit/phpunit": "^9.0"
     },
     "authors": [
         {
@@ -22,6 +26,15 @@
         "psr-4": {
             "Leijman\\FmpApiSdk\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Leijman\\FmpApiSdk\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "extra": {
         "laravel": {
