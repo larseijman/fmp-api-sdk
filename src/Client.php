@@ -8,6 +8,7 @@ use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Leijman\FmpApiSdk\Contracts\Fmp;
+use Leijman\FmpApiSdk\Exceptions\InvalidData;
 
 class Client implements Fmp
 {
@@ -32,7 +33,7 @@ class Client implements Fmp
     *
     * @return ResponseInterface
     * @throws GuzzleException
-    * @throws WrongData
+    * @throws InvalidData
     */
     public function send(RequestInterface $request, array $options = []): ResponseInterface
     {
@@ -44,7 +45,7 @@ class Client implements Fmp
             ]);
         }
         catch (ClientException $e) {
-            // throw WrongData::invalidValuesProvided($e->getMessage());
+            throw InvalidData::invalidValuesProvided($e->getMessage());
         }
     }
 }

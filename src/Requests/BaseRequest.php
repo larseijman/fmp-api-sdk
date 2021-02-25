@@ -5,6 +5,7 @@ namespace Leijman\FmpApiSdk\Requests;
 use Leijman\FmpApiSdk\Contracts\Fmp;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Collection;
+use Leijman\FmpApiSdk\Exceptions\InvalidData;
 
 abstract class BaseRequest
 {
@@ -37,7 +38,7 @@ abstract class BaseRequest
         $request = new Request($this->method, $this->getFullEndpoint(), [], json_encode($this->payload));
 
         $response = $this->api->send($request);
-        
+
         return collect(json_decode($response->getBody()->getContents()));
     }
 
@@ -53,7 +54,7 @@ abstract class BaseRequest
         $this->method = 'POST';
 
         if (empty($this->payload)) {
-            // throw WrongData::invalidValuesProvided('Payload required to perform a POST request');
+            throw InvalidData::invalidValuesProvided('Payload required to perform a POST request');
         }
 
         return $this->send();

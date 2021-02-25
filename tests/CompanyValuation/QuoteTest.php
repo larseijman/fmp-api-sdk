@@ -62,10 +62,12 @@ class QuoteTest extends BaseTestCase
     {
         $quote = new \Leijman\FmpApiSdk\CompanyValuation\Quote($this->client);
 
-        $response = $quote->setSymbol('aapl')->get();
+        $response = $quote->setSymbol('AAPL')->get();
 
         $this->assertInstanceOf(Collection::class, $response);
         $this->assertCount(22, $response);
+        $this->assertEquals('AAPL', $response['symbol']);
+        $this->assertEquals(104092062, $response['avgVolume']);
     }
 
     /** @test */
@@ -77,6 +79,6 @@ class QuoteTest extends BaseTestCase
             ->once()
             ->andReturnSelf();
 
-        Quote::setSymbol('aapl');
+        Quote::setSymbol('AAPL');
     }
 }
