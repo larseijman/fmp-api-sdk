@@ -18,7 +18,7 @@
     </testsuites>
 
     <php>
-        <env name="FMP_API_KEY" value=""/>
+        <env name="FMP_API_KEY" value="secret_api_key"/>
         <env name="FMP_BASE_URL" value="https://financialmodelingprep.com/api/v3/"/>
     </php>
 

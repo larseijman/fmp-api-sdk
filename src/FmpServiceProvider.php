@@ -5,6 +5,7 @@ namespace Leijman\FmpApiSdk;
 use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
 use Leijman\FmpApiSdk\Contracts\Fmp;
+use Leijman\FmpApiSdk\Exceptions\InvalidConfig;
 
 class FmpServiceProvider extends ServiceProvider
 {
@@ -51,15 +52,11 @@ class FmpServiceProvider extends ServiceProvider
     protected function guardAgainstInvalidConfig(array $config = null)
     {
         if (empty($config['base_url'])) {
-            // throw InvalidConfig::baseUrlNotSpecified();
+            throw InvalidConfig::baseUrlNotSpecified();
         }
 
-        if (empty($config['secret_key'])) {
-            // throw InvalidConfig::apiKeyNotSpecified();
-        }
-
-        if (empty($config['public_key'])) {
-            // throw InvalidConfig::apiKeyNotSpecified();
+        if (empty($config['api_key'])) {
+            throw InvalidConfig::apiKeyNotSpecified();
         }
     }
 }

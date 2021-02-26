@@ -21,8 +21,8 @@ class BaseTestCase extends \Orchestra\Testbench\TestCase
 
     protected function setConfig(): void
     {
-        $this->app['config']->set('FMP_BASE_URL');
-        $this->app['config']->set('FMP_API_KEY');
+        $this->app['config']->set('fmp.base_url', env('FMP_BASE_URL'));
+        $this->app['config']->set('fmp.api_key', env('FMP_API_KEY'));
     }
 
     protected function setupMockedClient(Response $response)
@@ -31,7 +31,7 @@ class BaseTestCase extends \Orchestra\Testbench\TestCase
 
         $handler = HandlerStack::create($mock);
         $client = new Client(['handler' => $handler]);
-        
+
         return  new \Leijman\FmpApiSdk\Client($client);
     }
 

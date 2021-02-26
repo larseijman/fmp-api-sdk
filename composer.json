@@ -14,7 +14,7 @@
     },
     "require-dev": {
         "orchestra/testbench": "6.*",
-        "phpunit/phpunit": "^9.0"
+        "phpunit/phpunit": "^9.3.3"
     },
     "authors": [
         {
