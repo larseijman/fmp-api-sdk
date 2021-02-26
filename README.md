@@ -29,7 +29,7 @@ $guzzle = new Client([
         'Accept' => 'application/json',
         'Content-Type' => 'application/json'
     ],
-    'query' => ['token' => $apiKey]
+    'query' => ['apikey' => $apiKey]
 ]);
 ```
 You can now use the Guzzle client as a dependency.
