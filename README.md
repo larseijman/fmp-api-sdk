@@ -41,7 +41,7 @@ To communicate to the various endpoint you can use the client like so:
 use \Leijman\FmpApiSdk\CompanyValuation\Quote;
 
 $endpoint = new Quote($client);
-$response = $endpoint->setSymbol('aapl')->get();
+$response = $endpoint->setSymbol('AAPL')->get();
 
 print_r($response);
 ```
