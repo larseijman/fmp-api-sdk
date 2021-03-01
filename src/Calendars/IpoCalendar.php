@@ -8,9 +8,9 @@ use Leijman\FmpApiSdk\Contracts\Fmp;
 use Leijman\FmpApiSdk\Exceptions\InvalidData;
 use Leijman\FmpApiSdk\Requests\BaseRequest;
 
-class EarningsCalendar extends BaseRequest
+class IpoCalendar extends BaseRequest
 {
-    const ENDPOINT = 'earning_calendar?';
+    const ENDPOINT = 'ipo_calendar?';
 
     private $query_string = array();
 
@@ -46,7 +46,7 @@ class EarningsCalendar extends BaseRequest
     /**
      * @param string $fromDate
      *
-     * @return EarningsCalendar
+     * @return IpoCalendar
      */
     public function setFromDate(string $fromDate): self
     {
@@ -59,7 +59,7 @@ class EarningsCalendar extends BaseRequest
     /**
      * @param string $toDate
      *
-     * @return EarningsCalendar
+     * @return IpoCalendar
      */
     public function setToDate(string $toDate): self
     {
