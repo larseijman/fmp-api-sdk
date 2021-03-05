@@ -37,7 +37,7 @@ class StockScreener extends BaseRequest
      */
     public function setMarketCapMoreThan(int $market_cap_more_than): self
     {
-        array_push($this->query_string, ['marketCapMoreThan' => $market_cap_more_than]);
+        $this->query_string['marketCapMoreThan'] = $market_cap_more_than;
 
         return $this;
     }
@@ -49,7 +49,7 @@ class StockScreener extends BaseRequest
      */
     public function setMarketCapLowerThan(int $market_cap_lower_than): self
     {
-        array_push($this->query_string, ['marketCapLowerThan' => $market_cap_lower_than]);
+        $this->query_string['marketCapLowerThan'] = $market_cap_lower_than;
 
         return $this;
     }
@@ -61,7 +61,7 @@ class StockScreener extends BaseRequest
      */
     public function setPriceMoreThan(int $price_more_than): self
     {
-        array_push($this->query_string, ['priceMoreThan' => $price_more_than]);
+        $this->query_string['priceMoreThan'] = $price_more_than;
 
         return $this;
     }
@@ -73,7 +73,7 @@ class StockScreener extends BaseRequest
      */
     public function setPriceLowerThan(int $price_lower_than): self
     {
-        array_push($this->query_string, ['priceLowerThan' => $price_lower_than]);
+        $this->query_string['priceLowerThan'] = $price_lower_than;
 
         return $this;
     }
@@ -85,7 +85,7 @@ class StockScreener extends BaseRequest
      */
     public function setBetaMoreThan(int $beta_more_than): self
     {
-        array_push($this->query_string, ['betaMoreThan' => $beta_more_than]);
+        $this->query_string['betaMoreThan'] = $beta_more_than;
 
         return $this;
     }
@@ -97,7 +97,7 @@ class StockScreener extends BaseRequest
      */
     public function setBetaLowerThan(int $beta_lower_than): self
     {
-        array_push($this->query_string, ['betaLowerThan' => $beta_lower_than]);
+        $this->query_string['betaLowerThan'] = $beta_lower_than;
 
         return $this;
     }
@@ -109,7 +109,7 @@ class StockScreener extends BaseRequest
      */
     public function setVolumeMoreThan(int $volume_more_than): self
     {
-        array_push($this->query_string, ['volumeMoreThan' => $volume_more_than]);
+        $this->query_string['volumeMoreThan'] = $volume_more_than;
 
         return $this;
     }
@@ -121,7 +121,7 @@ class StockScreener extends BaseRequest
      */
     public function setVolumeLowerThan(int $volume_lower_than): self
     {
-        array_push($this->query_string, ['volumeLowerThan' => $volume_lower_than]);
+        $this->query_string['volumeLowerThan'] = $volume_lower_than;
 
         return $this;
     }
@@ -133,7 +133,7 @@ class StockScreener extends BaseRequest
      */
     public function setDividendMoreThan(int $dividend_more_than): self
     {
-        array_push($this->query_string, ['dividendMoreThan' => $dividend_more_than]);
+        $this->query_string['dividendMoreThan'] = $dividend_more_than;
 
         return $this;
     }
@@ -145,7 +145,7 @@ class StockScreener extends BaseRequest
      */
     public function setDividendLowerThan(int $dividend_lower_than): self
     {
-        array_push($this->query_string, ['dividendLowerThan' => $dividend_lower_than]);
+        $this->query_string['dividendLowerThan'] = $dividend_lower_than;
 
         return $this;
     }
@@ -157,7 +157,7 @@ class StockScreener extends BaseRequest
      */
     public function setExchange(string $exchanges): self
     {
-        array_push($this->query_string, ['exchange' => $exchanges]);
+        $this->query_string['exchange'] = $exchanges;
 
         return $this;
     }
@@ -169,7 +169,7 @@ class StockScreener extends BaseRequest
      */
     public function setLimit(int $limit): self
     {
-        array_push($this->query_string, ['limit' => $limit]);
+        $this->query_string['limit'] = $limit;
 
         return $this;
     }
@@ -181,7 +181,7 @@ class StockScreener extends BaseRequest
      */
     public function setCountries(string $countries): self
     {
-        array_push($this->query_string, ['country' => $countries]);
+        $this->query_string['country'] = $countries;
 
         return $this;
     }
@@ -193,7 +193,7 @@ class StockScreener extends BaseRequest
      */
     public function setIndustries(string $industries): self
     {
-        array_push($this->query_string, ['industry' => $industries]);
+        $this->query_string['industry'] = $industries;
 
         return $this;
     }
@@ -205,7 +205,7 @@ class StockScreener extends BaseRequest
      */
     public function setSectors(string $sectors): self
     {
-        array_push($this->query_string, ['sector' => $sectors]);
+        $this->query_string['sector'] = $sectors;
 
         return $this;
     }
@@ -217,7 +217,7 @@ class StockScreener extends BaseRequest
      */
     public function setIsActivelyTrading(bool $is_actively_trading): self
     {
-        array_push($this->query_string, ['isActivelyTrading' => $is_actively_trading]);
+        $this->query_string['isActivelyTrading'] = $is_actively_trading;
 
         return $this;
     }
@@ -229,7 +229,7 @@ class StockScreener extends BaseRequest
      */
     public function setIsEtf(bool $is_etf): self
     {
-        array_push($this->query_string, ['isEtf' => $is_etf]);
+        $this->query_string['isEtf'] = $is_etf;
 
         return $this;
     }

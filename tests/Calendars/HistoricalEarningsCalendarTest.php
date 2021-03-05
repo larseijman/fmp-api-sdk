@@ -52,11 +52,11 @@ class HistoricalEarningsCalendarTest extends BaseTestCase
     /** @test */
     public function it_should_fail_without_a_symbol()
     {
-        $quote = new \Leijman\FmpApiSdk\Calendars\HistoricalEarningsCalendar($this->client);
+        $historical_earnings_calendar = new \Leijman\FmpApiSdk\Calendars\HistoricalEarningsCalendar($this->client);
 
         $this->expectException(InvalidData::class);
 
-        $quote->get();
+        $historical_earnings_calendar->get();
     }
 
     /** @test */

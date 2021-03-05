@@ -32,7 +32,7 @@ class BaseTestCase extends \Orchestra\Testbench\TestCase
         $handler = HandlerStack::create($mock);
         $client = new Client(['handler' => $handler]);
 
-        return  new \Leijman\FmpApiSdk\Client($client);
+        return new \Leijman\FmpApiSdk\Client($client);
     }
 
     protected function getPackageProviders($app)
