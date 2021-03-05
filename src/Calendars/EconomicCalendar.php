@@ -51,7 +51,7 @@ class EconomicCalendar extends BaseRequest
     public function setFromDate(string $fromDate): self
     {
         $this->fromDate = $fromDate;
-        array_push($this->query_string, ['from' => $fromDate]);
+        $this->query_string['from'] = $fromDate;
 
         return $this;
     }
@@ -64,7 +64,7 @@ class EconomicCalendar extends BaseRequest
     public function setToDate(string $toDate): self
     {
         $this->toDate = $toDate;
-        array_push($this->query_string, ['to' => $toDate]);
+        $this->query_string['to'] = $toDate;
 
         return $this;
     }

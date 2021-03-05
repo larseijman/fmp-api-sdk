@@ -38,7 +38,7 @@ class HistoricalEarningsCalendar extends BaseRequest
      */
     public function setLimit(int $limit): self
     {
-        array_push($this->query_string, ['limit' => $limit]);
+        $this->query_string['limit'] = $limit;
 
         return $this;
     }

@@ -62,7 +62,7 @@ class Form13F extends BaseRequest
     public function setDate(string $date): self
     {
         $this->date = $date;
-        array_push($this->query_string, ['date' => $date]);
+        $this->query_string['date'] = $date;
 
         return $this;
     }
