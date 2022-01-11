@@ -54,7 +54,7 @@ abstract class BaseRequest
         $this->method = 'POST';
 
         if (empty($this->payload)) {
-            throw InvalidData::invalidValuesProvided('Payload required to perform a POST request');
+            throw InvalidData::invalidDataProvided('Payload required to perform a POST request');
         }
 
         return $this->send();
