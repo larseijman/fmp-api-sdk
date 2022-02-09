@@ -34,7 +34,7 @@ class HistoricalPriceFull extends BaseRequest
      *
      * @return HistoricalPriceFull
      */
-    public function setDateFrom(int $date_from): self
+    public function setDateFrom(string $date_from): self
     {
         $this->query_string['from'] = $date_from;
 
@@ -46,7 +46,7 @@ class HistoricalPriceFull extends BaseRequest
      *
      * @return HistoricalPriceFull
      */
-    public function setDateTo(int $date_to): self
+    public function setDateTo(string $date_to): self
     {
         $this->query_string['to'] = $date_to;
 
