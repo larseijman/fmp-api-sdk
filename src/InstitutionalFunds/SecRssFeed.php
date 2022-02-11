@@ -7,7 +7,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class SecRssFeed extends BaseRequest
 {
-    const ENDPOINT = 'rss_feeds?';
+    const ENDPOINT = 'v3/rss_feeds?';
 
     private $query_string = array();
 

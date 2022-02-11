@@ -7,7 +7,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class Actives extends BaseRequest
 {
-    const ENDPOINT = 'actives';
+    const ENDPOINT = 'v3/actives';
 
     /**
      * Create constructor.

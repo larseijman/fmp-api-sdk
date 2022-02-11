@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class InstitutionalHolder extends BaseRequest
 {
-    const ENDPOINT = 'institutional-holder/{symbol}';
+    const ENDPOINT = 'v3/institutional-holder/{symbol}';
 
     /**
      * Create constructor.

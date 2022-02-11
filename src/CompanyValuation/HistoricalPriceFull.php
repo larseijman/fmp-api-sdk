@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class HistoricalPriceFull extends BaseRequest
 {
-    const ENDPOINT = 'historical-price-full/{symbol}?';
+    const ENDPOINT = 'v3/historical-price-full/{symbol}?';
 
     /**
      * Create constructor.

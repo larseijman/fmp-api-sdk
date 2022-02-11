@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class Cik extends BaseRequest
 {
-    const ENDPOINT = 'cik/{cik}';
+    const ENDPOINT = 'v3/cik/{cik}';
 
     /**
      * @var string

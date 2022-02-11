@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class CikSearch extends BaseRequest
 {
-    const ENDPOINT = 'cik-search/{name}';
+    const ENDPOINT = 'v3/cik-search/{name}';
 
     /**
      * @var string

@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class KeyExecutives extends BaseRequest
 {
-    const ENDPOINT = 'key-executives/{symbol}';
+    const ENDPOINT = 'v3/key-executives/{symbol}';
 
     /**
      * Create constructor.

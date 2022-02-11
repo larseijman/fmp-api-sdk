@@ -7,7 +7,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class CountriesList extends BaseRequest
 {
-    const ENDPOINT = 'get-all-countries';
+    const ENDPOINT = 'v3/get-all-countries';
 
     /**
      * Create constructor.

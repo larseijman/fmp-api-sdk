@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class DiscountedCashFlow extends BaseRequest
 {
-    const ENDPOINT = 'discounted-cash-flow/{symbol}';
+    const ENDPOINT = 'v3/discounted-cash-flow/{symbol}';
 
     /**
      * Create constructor.

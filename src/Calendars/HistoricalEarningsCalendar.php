@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class HistoricalEarningsCalendar extends BaseRequest
 {
-    const ENDPOINT = 'historical/earning_calendar/{symbol}?';
+    const ENDPOINT = 'v3/historical/earning_calendar/{symbol}?';
 
     private $query_string = array();
 

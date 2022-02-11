@@ -7,7 +7,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class Losers extends BaseRequest
 {
-    const ENDPOINT = 'losers';
+    const ENDPOINT = 'v3/losers';
 
     /**
      * Create constructor.

@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class EtfSectorWeightings extends BaseRequest
 {
-    const ENDPOINT = 'etf-sector-weightings/{symbol}';
+    const ENDPOINT = 'v3/etf-sector-weightings/{symbol}';
 
     /**
      * Create constructor.

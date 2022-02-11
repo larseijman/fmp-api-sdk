@@ -7,7 +7,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class MarketHours extends BaseRequest
 {
-    const ENDPOINT = 'market-hours';
+    const ENDPOINT = 'v3/market-hours';
 
     /**
      * Create constructor.

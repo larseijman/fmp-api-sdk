@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class Quote extends BaseRequest
 {
-    const ENDPOINT = 'quote/{symbol}';
+    const ENDPOINT = 'v3/quote/{symbol}';
 
     /**
      * Create constructor.

@@ -23,6 +23,6 @@ return [
     |
     */
 
-    'base_url' => env('FMP_BASE_URL', 'https://financialmodelingprep.com/api/v3/'),
+    'base_url' => env('FMP_BASE_URL', 'https://financialmodelingprep.com/api/'),
 
 ];

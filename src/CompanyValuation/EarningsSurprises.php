@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class EarningsSurprises extends BaseRequest
 {
-    const ENDPOINT = 'earnings-surpises/{symbol}';
+    const ENDPOINT = 'v3/earnings-surpises/{symbol}';
 
     /**
      * Create constructor.

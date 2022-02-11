@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class MutualFundHolder extends BaseRequest
 {
-    const ENDPOINT = 'mutual-fund-holder/{symbol}';
+    const ENDPOINT = 'v3/mutual-fund-holder/{symbol}';
 
     /**
      * Create constructor.

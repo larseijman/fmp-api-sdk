@@ -7,7 +7,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class SectorsPerformance extends BaseRequest
 {
-    const ENDPOINT = '{endpoint}?';
+    const ENDPOINT = 'v3/{endpoint}?';
 
     private $query_string = array();
 

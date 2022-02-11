@@ -10,7 +10,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class EarningsCalendar extends BaseRequest
 {
-    const ENDPOINT = 'earning_calendar?';
+    const ENDPOINT = 'v3/earning_calendar?';
 
     private $query_string = array();
 
@@ -40,7 +40,7 @@ class EarningsCalendar extends BaseRequest
      */
     protected function getFullEndpoint(): string
     {
-        return self::ENDPOINT.http_build_query($this->query_string);
+        return self::ENDPOINT . http_build_query($this->query_string);
     }
 
     /**

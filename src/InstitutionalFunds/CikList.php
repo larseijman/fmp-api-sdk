@@ -7,7 +7,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class CikList extends BaseRequest
 {
-    const ENDPOINT = 'cik_list';
+    const ENDPOINT = 'v3/cik_list';
 
     /**
      * Create constructor.

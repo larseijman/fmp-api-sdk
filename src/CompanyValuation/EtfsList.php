@@ -7,7 +7,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class EtfsList extends BaseRequest
 {
-    const ENDPOINT = 'etf/list';
+    const ENDPOINT = 'v3/etf/list';
 
     /**
      * Create constructor.

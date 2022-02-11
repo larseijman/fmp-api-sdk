@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class EtfHolder extends BaseRequest
 {
-    const ENDPOINT = 'etf-holder/{symbol}';
+    const ENDPOINT = 'v3/etf-holder/{symbol}';
 
     /**
      * Create constructor.

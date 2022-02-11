@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class MarketCapitalization extends BaseRequest
 {
-    const ENDPOINT = 'market-capitalization/{symbol}';
+    const ENDPOINT = 'v3/market-capitalization/{symbol}';
 
     /**
      * Create constructor.

@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class Profile extends BaseRequest
 {
-    const ENDPOINT = 'profile/{symbol}';
+    const ENDPOINT = 'v3/profile/{symbol}';
 
     /**
      * Create constructor.

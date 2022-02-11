@@ -10,7 +10,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class Form13F extends BaseRequest
 {
-    const ENDPOINT = 'form-thirteen/{cik}?';
+    const ENDPOINT = 'v3/form-thirteen/{cik}?';
 
     private $query_string = array();
 

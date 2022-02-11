@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class Rating extends BaseRequest
 {
-    const ENDPOINT = 'rating/{symbol}';
+    const ENDPOINT = 'v3/rating/{symbol}';
 
     /**
      * Create constructor.
