@@ -47,8 +47,8 @@ class ProfileByIsin extends BaseRequest
      */
     protected function validateParams(): void
     {
-        if (empty($this->symbol)) {
-            throw InvalidData::invalidDataProvided('Please provide a symbol to query!');
+        if (empty($this->query_string['isin'])) {
+            throw InvalidData::invalidDataProvided('Please provide an isin code to query!');
         }
     }
 }
