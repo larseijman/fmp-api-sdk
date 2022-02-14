@@ -26,7 +26,7 @@ class ProfileByIsin extends BaseRequest
      */
     protected function getFullEndpoint(): string
     {
-        return http_build_query($this->query_string);
+        return self::ENDPOINT . http_build_query($this->query_string);
     }
 
     /**
