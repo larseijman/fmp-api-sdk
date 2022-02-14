@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class ProfileByIsin extends BaseRequest
 {
-    const ENDPOINT = 'v4/search/isin';
+    const ENDPOINT = 'v4/search/isin?';
 
     /**
      * Create constructor.
