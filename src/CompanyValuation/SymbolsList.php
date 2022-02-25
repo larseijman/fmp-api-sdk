@@ -7,7 +7,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class SymbolsList extends BaseRequest
 {
-    const ENDPOINT = 'stock/list';
+    const ENDPOINT = 'v3/stock/list';
 
     /**
      * Create constructor.

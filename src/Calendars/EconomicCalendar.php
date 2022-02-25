@@ -10,7 +10,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class EconomicCalendar extends BaseRequest
 {
-    const ENDPOINT = 'economic_calendar?';
+    const ENDPOINT = 'v3/economic_calendar?';
 
     private $query_string = array();
 
@@ -40,7 +40,7 @@ class EconomicCalendar extends BaseRequest
      */
     protected function getFullEndpoint(): string
     {
-        return self::ENDPOINT.http_build_query($this->query_string);
+        return self::ENDPOINT . http_build_query($this->query_string);
     }
 
     /**

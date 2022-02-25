@@ -7,7 +7,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class TradableSymbolsList extends BaseRequest
 {
-    const ENDPOINT = 'available-traded/list';
+    const ENDPOINT = 'v3/available-traded/list';
 
     /**
      * Create constructor.

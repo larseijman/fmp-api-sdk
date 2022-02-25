@@ -8,7 +8,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class CusipMapper extends BaseRequest
 {
-    const ENDPOINT = 'cusip/{cusip}';
+    const ENDPOINT = 'v3/cusip/{cusip}';
 
     /**
      * @var string

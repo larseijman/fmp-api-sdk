@@ -7,7 +7,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class StockScreener extends BaseRequest
 {
-    const ENDPOINT = 'stock-screener?';
+    const ENDPOINT = 'v3/stock-screener?';
 
     public $query_string = array();
 
@@ -27,7 +27,7 @@ class StockScreener extends BaseRequest
      */
     protected function getFullEndpoint(): string
     {
-        return self::ENDPOINT.http_build_query($this->query_string);
+        return self::ENDPOINT . http_build_query($this->query_string);
     }
 
     /**

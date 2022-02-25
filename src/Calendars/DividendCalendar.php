@@ -10,7 +10,7 @@ use Leijman\FmpApiSdk\Requests\BaseRequest;
 
 class DividendCalendar extends BaseRequest
 {
-    const ENDPOINT = 'stock_dividend_calendar?';
+    const ENDPOINT = 'v3/stock_dividend_calendar?';
 
     private $query_string = array();
 
@@ -40,7 +40,7 @@ class DividendCalendar extends BaseRequest
      */
     protected function getFullEndpoint(): string
     {
-        return self::ENDPOINT.http_build_query($this->query_string);
+        return self::ENDPOINT . http_build_query($this->query_string);
     }
 
     /**

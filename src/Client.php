@@ -13,28 +13,28 @@ use Leijman\FmpApiSdk\Exceptions\InvalidData;
 class Client implements Fmp
 {
     /**
-    * @var Guzzle|null
-    */
+     * @var Guzzle|null
+     */
     private $client = null;
 
     /**
-    * Client constructor.
-    *
-    * @param  Guzzle  $client
-    */
+     * Client constructor.
+     *
+     * @param  Guzzle  $client
+     */
     public function __construct(Guzzle $client)
     {
         $this->client = $client;
     }
 
     /**
-    * @param  RequestInterface  $request
-    * @param  array  $options
-    *
-    * @return ResponseInterface
-    * @throws GuzzleException
-    * @throws InvalidData
-    */
+     * @param  RequestInterface  $request
+     * @param  array  $options
+     *
+     * @return ResponseInterface
+     * @throws GuzzleException
+     * @throws InvalidData
+     */
     public function send(RequestInterface $request, array $options = []): ResponseInterface
     {
         try {
@@ -43,9 +43,8 @@ class Client implements Fmp
             return $this->client->send($request, [
                 'query' => array_merge($this->client->getConfig('query') ?? [], $query)
             ]);
-        }
-        catch (ClientException $e) {
-            throw InvalidData::invalidValuesProvided($e->getMessage());
+        } catch (ClientException $e) {
+            throw InvalidData::invalidDataProvided($e->getMessage());
         }
     }
 }
