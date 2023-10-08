@@ -7,10 +7,10 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^8.1",
         "ext-json": "*",
         "guzzlehttp/guzzle": "^7.0.1",
-        "illuminate/support": "8.*"
+        "illuminate/support": "10.*"
     },
     "require-dev": {
         "orchestra/testbench": "6.*",

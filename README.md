@@ -8,7 +8,7 @@
 This project is in WIP state and may be unstable. Various endpoints will be added in the future and feel free to contribute to this package. Unfortunately I can't guarantee any warranty or liability for this SDK. For any questions feel free to contact me!
 
 ## Requirements
-- PHP ^7.3 or ^8.0
+- ^8.1
 - A valid (free) API key from [FMP](https://financialmodelingprep.com/developer)
 
 ## Installation

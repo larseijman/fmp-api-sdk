@@ -7,3 +7,6 @@ coverage.clover
 phpunit.xml
 .phpunit.cache
 .phpunit.result.cache
+
+# JetBrains IDE
+.idea/
